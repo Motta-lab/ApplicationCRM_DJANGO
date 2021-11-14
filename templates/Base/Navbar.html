@@ -1,0 +1,19 @@
+
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+   <img src="{%static 'image/CRM.JPG'%}" width="100" height="100" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+        <a class="nav-link" href="#">Clients</a>
+        <a class="nav-link" href="#">Commandes</a>
+      </div>
+    </div>
+  </div>
+    <span>Salut {{request.user}}</span>
+    <span><a href="{% url 'quitter'%}">Quitter</a></span>
+</nav>
